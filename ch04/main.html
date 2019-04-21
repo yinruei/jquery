@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <!-- <script src="js/all.js"></script> -->
+    <style>
+        .box{
+            width: 200px;
+            height: 160px;
+            border: 1px solid blue;
+            overflow: hidden;
+            position: relative;
+        }
+        .box:hover .title{
+            bottom: 0;
+        }
+        .title{
+            transition: all 1s;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            width: 100%;
+            position: absolute;
+            bottom:-30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/feature-jquery.png" alt="">
+        <div class="title">產品標題</div>
+    </div>
+</body>
+</html>
